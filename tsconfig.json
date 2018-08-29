@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "jsx": "preserve",
+        "module": "es6",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "baseUrl": "."
+    },
+    "include": [
+        "src/**/*",
+        "global.d.ts"
+    ]
+}

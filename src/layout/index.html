@@ -1,0 +1,13 @@
+<!doctype HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample project</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <% _.forEach(htmlWebpackPlugin.files.js, function(x) { %>
+      <script type="text/javascript" src="/<%- x %>"></script>
+    <% }) %>
+  </body>
+</html>
