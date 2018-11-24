@@ -2,12 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Sample project</title>
+    <title>Dummy project</title>
+    <% _.forEach(htmlWebpackPlugin.files.css, function(x) { %>
+    <link rel="stylesheet" type="text/css" href="<%- x %>"/>
+    <% }) %>
   </head>
   <body>
     <div id="root"></div>
     <% _.forEach(htmlWebpackPlugin.files.js, function(x) { %>
-      <script type="text/javascript" src="/<%- x %>"></script>
+      <script type="text/javascript" src="<%- x %>"></script>
     <% }) %>
   </body>
 </html>

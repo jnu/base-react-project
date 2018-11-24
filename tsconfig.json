@@ -2,16 +2,24 @@
     "compilerOptions": {
         "target": "es6",
         "jsx": "preserve",
-        "module": "es6",
+        "lib": ["es6", "dom"],
+        "module": "esnext",
         "moduleResolution": "node",
         "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "baseUrl": "."
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "paths": {
+            "src/*": ["./src/*"]
+        }
     },
     "include": [
-        "src/**/*",
-        "global.d.ts"
+        "src/**/*"
     ]
 }
